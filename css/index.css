@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 95%;
+    margin: auto;
+}
+
+.mainDisplay {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "l f";
+}
+
+.grid_f {
+    background-color: azure;
+    grid-area: f;
+}
+
+.grid_l {
+    background-color: beige;
+    grid-area: l;
+}
