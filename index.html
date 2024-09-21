@@ -12,7 +12,7 @@
     </header>
     <main class="mainDisplay">
         <div class="grid_f">
-            <h1>Registro de notas</h1>
+            <h2>Registro de notas</h2>
             <form name="registroNotas" id="registro">
                 <div>
                     <label>Codigo</label>
@@ -24,19 +24,19 @@
                 </div>
                 <div>
                     <label>Nota 20%</label>
-                    <input type="number" name="nota1Inp" id="nota1" required>
+                    <input type="number" name="nota1Inp" id="nota1" step="0.1" required>
                 </div>
                 <div>
                     <label>Nota 20%</label>
-                    <input type="number" name="nota2Inp" id="nota2" required>
+                    <input type="number" name="nota2Inp" id="nota2"step="0.1" required>
                 </div>
                 <div>
                     <label>Nota 20%</label>
-                    <input type="number" name="nota3Inp" id="nota3" required>
+                    <input type="number" name="nota3Inp" id="nota3"step="0.1" required>
                 </div>
                 <div>
                     <label>Nota 40%</label>
-                    <input type="number" name="nota4Inp" id="nota4" required>
+                    <input type="number" name="nota4Inp" id="nota4"step="0.1" required>
                 </div>
                 <div>
                     <button type="submit" id="guardar">Guardar</button>
@@ -45,11 +45,11 @@
         </div>
         <br>
         <div class="grid_l">
-            <h1>Lista de estudiantes</h1>
+            <h2>Lista de estudiantes</h2>
             <table id="estudiantes">
                 <thead>
                     <tr>
-                        <th>a</th>
+                        <th></th>
                         <th>Codigo</th>
                         <th>Nombre</th>
                         <th>20%</th>
@@ -60,9 +60,25 @@
                         <th>A/N</th>
                     </tr>
                 </thead>
-                <tbody id="listado"></tbody>
+                <tbody></tbody>
             </table>
-            <div id="modal"></div>
+        </div>
+        <div id="avisoBG">
+            <div id="aviso">
+                <div id="modal">
+                    <p></p>
+                    <div>
+                        <button id="confirm">Confirmar</button>
+                        <button id="cancel">Cancelar</button>
+                    </div>
+                </div>
+                <div id="msg">
+                    <p></p>
+                    <div>
+                        <button id="okBtn">Ok</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="js/index.js"></script>
